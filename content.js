@@ -53,8 +53,13 @@ function saveMhtml() {
 const button = document.createElement('button');
 button.textContent = 'Копировать HTML';
 button.style.position = 'fixed';
-button.style.top = 0;
-button.style.right = 0;
+button.style.top = "10px";
+button.style.right = "10px";
+button.style.backgroundColor = '#f5b342';
+button.style.color = 'white';
+button.style.padding = "8px";
+button.style.borderRadius = "8px";
+button.style.border = 'none'
 
 // Добавляем обработчик события клика на кнопку
 button.addEventListener('click', saveMhtml);

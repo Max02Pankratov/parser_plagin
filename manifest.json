@@ -1,18 +1,15 @@
 {
-  "manifest_version": 2,
-  "name": "Копировать HTML",
+  "manifest_version": 3,
+  "name": "Парсер HTML",
   "version": "1.0",
-  "description": "Плагин для копирования HTML-кода страницы",
+  "description": "Плагин для парсинга HTML-кода страницы",
   "permissions": [
     "clipboardWrite",
     "*://*.hh.ru/*"
   ],
-  "background": {
-    "scripts": [
-      "content.js"
-    ],
-    "persistent": false
-  },
+  "host_permissions": [
+    "clipboardWrite"
+  ],
   "content_scripts": [
     {
       "matches": [
